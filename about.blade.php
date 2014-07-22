@@ -1,4 +1,4 @@
-@extends('spicyginger.layout')
+@extends('spicy-ginger.layout')
 
 @section('title')
     About Us

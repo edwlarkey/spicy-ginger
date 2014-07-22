@@ -8,7 +8,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-		<link href="{{ asset('themes/spicyginger/css/style.css') }}" rel="stylesheet">
+		<link href="{{ asset('themes/spicy-ginger/css/style.css') }}" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
@@ -49,7 +49,7 @@
 		</div>
        <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'spicyginger'; // required: replace example with your forum shortname
+        var disqus_shortname = 'spicy-ginger'; // required: replace example with your forum shortname
 
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function () {

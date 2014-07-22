@@ -1,4 +1,4 @@
-@extends('spicyginger.layout')
+@extends('spicy-ginger.layout')
 
 @section('title')
 	{{ $post->title }}
@@ -10,7 +10,7 @@
 
 		<h1 class="title">{{ $post->title }}</h1>
         <div class="date">By {{ $post->user->first_name }} on  {{ $post->publish_date->format("F j, Y") }}</div>
-		@include('spicyginger.inc.tags')
+		@include('spicy-ginger.inc.tags')
 		@if ($post->image)
 			<div class="leader-img"><img src="/{{ Config::get('wardrobe.image_dir') }}/{{ $post->image }}" alt="{{ $post->title }}"/></div>
 		@endif
@@ -18,14 +18,14 @@
 		{{ $post->parsed_content }}
 
     <div class="social">
-	@include('spicyginger.inc.tags')
+	@include('spicy-ginger.inc.tags')
     </div>
 
     <div id="comments"></div>
     <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'spicyginger'; // required: replace example with your forum shortname
+        var disqus_shortname = 'spicy-ginger'; // required: replace example with your forum shortname
         var disqus_identifier = '{{ '/'.$post->slug }}';
         var disqus_title = '{{ $post->title }}';
         var disqus_url = '{{ URL::route('post', $post->slug) }}';

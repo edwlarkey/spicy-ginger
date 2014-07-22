@@ -1,5 +1,5 @@
 <ul class="tags">
-	@include('spicyginger.inc.social')
+	@include('spicy-ginger.inc.social')
 	@foreach ($post->tags as $item)
 		@if ($item->tag != "")
 			<li><a href="{{ URL::route('tag', $item->tag) }}">{{ $item->tag }}</a></li>
